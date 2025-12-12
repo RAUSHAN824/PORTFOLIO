@@ -94,7 +94,7 @@ function handleContact() {
     return;
   }
   // simple validation ok — demo success
-  alert(Thanks ${name}! I received your message.);
+  alert(Thanks ${name}!  I received your message.);
   qs("#contactForm").reset();
 }
 
