@@ -1,7 +1,7 @@
 /* styles.css - Portfolio custom styles */
 
 :root {
-  --brand: #4dce44;
+  --brand: #a4d6a0;
   --muted: #6c757d;
   --card-radius: 12px;
 }
@@ -9,7 +9,7 @@
 * { box-sizing: border-box; }
 body {
   font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: #f7fbfb;
+  background: #f0f4f0;
   color: #222;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,9 +21,11 @@ body {
 /* Hero profile card */
 .profile-card { background: #fff; border-radius: 12px; }
 
+
 /* Cards */
 .card { border: 0; border-radius: var(--card-radius); transition: transform .18s ease, box-shadow .18s ease; }
 .card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(12,12,12,0.08); }
+
 
 /* Projects grid card image area */
 .proj-thumb { height: 180px; display: grid; place-items: center; overflow: hidden; border-top-left-radius: var(--card-radius); border-top-right-radius: var(--card-radius); background: linear-gradient(180deg,#fff,#f6f8fb); }

@@ -103,7 +103,7 @@ function handleContact() {
     return;
   }
   // Demo success using template literal (backticks)
-  alert(`Thanks ${name}! I received your message.`);
+  alert(Thanks ${name}! I received your message.);
   qs("#contactForm").reset();
 }
 
@@ -126,4 +126,15 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('a.nav-link').forEach(a => {
     a.addEventListener('click', (e) => {
       const href = a.getAttribute('href');
-   
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        document.querySelector(href).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // collapse navbar on mobile
+        const nav = document.querySelector('.navbar-collapse');
+        if (nav.classList.contains('show')) {
+          new bootstrap.Collapse(nav).hide();
+        }
+      }
+    });
+  });
+});
